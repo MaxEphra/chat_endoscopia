@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endoscopia 6º andar · Acompanhante</title>
+    <!-- Fonte Inter (moderna) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome (ícone de localização) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #e6f4f9 0%, #d1e9f0 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            color: #115562;
+        }
+
+        .simple-section {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 3rem;
+            box-shadow: 0 30px 50px -20px rgba(0, 80, 90, 0.3),
+                        0 0 0 1px rgba(255, 255, 255, 0.6) inset;
+            padding: 3rem 2.5rem;
+            text-align: center;
+        }
+
+        .image-wrapper {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .illustration img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 1.8rem;
+            box-shadow: 0 15px 25px -8px rgba(0, 70, 80, 0.3);
+            transition: transform 0.2s ease;
+        }
+
+        .illustration img:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #015a68;
+            margin-bottom: 0.8rem;
+            letter-spacing: -0.02em;
+        }
+
+        .highlight {
+            font-size: 1.2rem;
+            color: #1d6d7c;
+            background: #dcf1f7;
+            display: inline-block;
+            padding: 0.4rem 1.8rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #1f6573;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .map-container {
+            margin-top: 2.5rem;
+            width: 100%;
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 0 15px 25px -8px rgba(0, 70, 80, 0.3);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            display: block;
+        }
+
+        .footer-note {
+            margin-top: 2rem;
+            font-size: 0.95rem;
+            color: #53848f;
+            border-top: 1px dashed #9ec9d4;
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* responsividade */
+        @media (max-width: 500px) {
+            .simple-section { padding: 2rem 1.5rem; }
+            h2 { font-size: 2rem; }
+            .highlight { font-size: 1rem; }
+            p { font-size: 1rem; }
+            .illustration img { max-width: 220px; }
+            .map-container iframe { height: 220px; }
+        }
+    </style>
+</head>
+<body>
+    <section class="simple-section">
+        <!-- Título e imagem -->
+        <h2> Endoscopia e Colonoscopia</h2>
+        <div class="image-wrapper illustration">
+            <img src="./endoscopia.jpg" 
+                 alt="Equipamento médico - endoscopia e colonoscopia"
+                 title="Setor de Endoscopia">
+        </div>
+
+        <!-- Badge e texto principal -->
+        <div class="highlight">Página do Acompanhante</div>
+        <p>
+            Esta é a página oficial do setor de <b>Endoscopia e Colonoscopia.</b>
+            <br>
+            Acesse o chat do setor para acompanhar o status do exame. <strong>ATENTE-SE</strong><br>
+            para vir buscar o paciente assim que o exame for finalizado.
+        </p>
+
+        <br>
+
+        <div class="footer-note">
+            <i class="fas fa-map-pin" style="margin-right: 6px;"></i> 
+           <a href="https://www.google.com/maps?q=Av.%20Bernardino%20de%20Campos,%20186,%20Paraíso,%20São%20Paulo&output=embed"> Av. Bernardino de Campos, 186 - Paraíso, São Paulo - SP (6° andar, Bloco B)</a>
+        </div>
+
+        <br>
+
+        <!-- MAPA DO GOOGLE incorporado com o endereço completo -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps?q=Av.%20Bernardino%20de%20Campos,%20186,%20Paraíso,%20São%20Paulo&output=embed" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="footer-note">
+            <i class="fas fa-map-pin" style="margin-right: 6px;"></i> 
+            <b>SETOR DE ENDOSCOPIA E COLONOSCOPIA</b>
+            <br>
+            <b>Unid. Paraíso - Bloco B, 6° Andar </b>
+        </div>
+    </section>
+</body>
+</html>
